@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inner_Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link>
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <Header>
+      <div class="flex-left">
+        <img src="images/images/menu-bar.svg" alt="menu bar">
+        <picture class="picture">
+            <source media="(max-width:600px)" srcset="images/images/mobile-header-logo.svg" />
+            <img src="images/images/logo.svg" alt="Logo" class="logo" />
+          </picture>
+    </div>
+    <div class="flex-right">
+      <div id="search_">
+        <img src="images/images/search-icon.svg" class="search">
+        <input type="text" placeholder="Search" class="search-txt">
+        </div>
+        <div class="dashboard_rr">
+        <img src="images/images/notification-icon.svg">
+        <img src="images/images/profile.png" class="profile">
+        <span class="profile-text">John Doe</span>
+        <img src="images/images/downward-arrow.svg" class="arrow">
+        </div>
+    </div>
+  </Header>
+    <section class="merge">
+      
+      <div class="side-bar">
+        <div class="side-bar-item item-1">
+            <img src="images/images/dashboard-active.svg" class="sidebar-item-icon">
+            <span class="sidebar-item-text" style="color: #C8242F;">Dashboard</span>
+        </div>
+        <div class="side-bar-item">
+            <img src="images/images/graph-default.svg" class="sidebar-item-icon">
+            <span class="sidebar-item-text">Analysis</span>
+        </div>
+        <div class="side-bar-item">
+            <img src="images/images/inbox-default.svg" class="sidebar-item-icon">
+            <span class="sidebar-item-text">Inbox</span>
+        </div>
+        <div class="side-bar-item">
+            <img src="images/images/clock-default.svg" class="sidebar-item-icon">
+            <span class="sidebar-item-text">History</span>
+        </div>
+        <div class="side-bar-item">
+            <img src="images/images/user-default.svg" class="sidebar-item-icon">
+            <span class="sidebar-item-text">User</span>
+        </div>
+        <div class="side-bar-item">
+            <img src="images/images/maintenance-default.svg" class="sidebar-item-icon">
+            <span class="sidebar-item-text">Maintenance</span>
+        </div>
+        <div class="side-bar-item">
+            <img src="images/images/setting-default.svg" class="sidebar-item-icon">
+            <span class="sidebar-item-text">Setting</span>
+        </div>
+    </div>
+
+
+
+
+     <div class="analysis">
+    <div class="analysis_heading"> Analysis</div>
+    <div class="analysis_div">
+      <div class="a_form">
+        <!-- One Column -->
+        <div class="column">
+          <span class= "a_heading">One Column</span>
+          <div class="upper">
+            <input class="a_input" type="text" id="name" required>
+            <label for="name">Name</label>
+          </div>
+          <div class="upper">
+            <select class="a_dropdown" style="margin-top: 21px;">
+              <option>Dropdown</option>
+              <option>1</option>
+              <option>2</option>
+            </select>
+          </div>
+          <div class="upper">
+            <textarea id="multiline" class="a_multiline" rows="4" required></textarea>
+            <label for="multiline">Multiple line</label>
+          </div>
+        </div>
+
+        <!-- Two column -->
+        <div class="column">
+          <span class= "a_heading">Two Column</span>
+          <div class="flex_row"> 
+            <div class="flex_col">
+              <div class="upper">
+                <input class="a_input" type="text" id="name" required>
+                <label for="name">Name</label>
+              </div>
+            </div>
+            <div class="flex_col">
+              <div class="upper">
+                <input class="a_input" type="text" id="username" required>
+                <label for="username">Username</label>
+              </div>
+            </div>
+          </div>
+          <div class="flex_row" style="margin-top: 21px">
+            <div class="flex_col">
+              <div class="upper">
+                <input class="a_input" type="password" id="pass" required>
+                <label for="pass">Password</label>
+              </div>
+            </div>
+            <div class="flex_col">
+              <div class="upper">
+                <select class="a_dropdown">
+                  <option>Dropdown</option>
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Three Column -->
+        <div class="column">
+          <span class= "a_heading">Three Column</span>
+          <div class="flex_row">
+            <div class="flex_col">
+              <div class="upper">
+                <input class="a_input" type="text" id="focus" required>
+                <label for="focus">Focus</label>
+              </div>
+            </div>
+            <div class="flex_col">
+              <div class="upper">
+                <input class="a_input" type="password" id="pass1" required>
+                <label for="pass1">Password</label>
+              </div>
+            </div>
+            <div class="flex_col">
+              <div class="upper">
+                <input class="a_disable" type="text" id="disable" name="disable" value="JohnDoe" disabled>
+                <label for="disable">Disabled</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Four Column -->
+        <div class="column">
+          <span class= "a_heading">Four Column</span>
+          <div class="flex_row">
+            <div class="flex_col">
+              <div class="upper">
+                <input class="a_validate" type="text" id="designation" name="designation" value="UI Designer"
+                  required>
+                <label for="designation">Designation</label>
+                <span>Enter Valid data</span>
+              </div>
+            </div>
+            <div class="flex_col">
+              <div class="upper">
+                <input class="outer_text" type="text" id="name" required>
+                <label for="name">Name</label>
+                <span>Enter your full Name as per ID</span>
+              </div>
+            </div>
+            <div class="flex_col">
+              <div class="upper">
+                <input class="a_input" type="text" id="uname" name="uname" required value="JohnDoe">
+                <label for="uname">Username</label>
+              </div>
+            </div>
+            <div class="flex_col">
+              <div class="upper">
+                <select class="a_dropdown">
+                  <option>Select</option>
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Design elements -->
+        <div class="column">
+          <div class= "a_heading" style="margin-bottom: 21px;">
+            Other Design Elements
+          </div>
+          <div class="other_text">
+            File Upload
+          </div>
+          <div class="upper">
+            <input type="file">
+            <button class="upload"><img src="images/images/cloud-upload-icon.svg" > <span
+                class="upload-text">Upload</span></button>
+            <span>No item Selected</span>
+          </div>
+          <div class="other_text" style="margin-top: 36px; margin-bottom: 10px;">
+            Radio Button
+          </div>
+          <div class="radio">
+            <div class="option"><input type="radio" name="option1" id="option1" /><span class="opt1">Option
+                1</span></div>
+            <div class="option"><input type="radio" name="option1" id="option2" /><span class="opt1">Option
+                2</span></div>
+          </div>
+          <div class="other_text" style="margin-top: 32px;">Checkbox</div>
+          <div class="checkbox">
+            <div class="check"><input type="checkbox" name="check" id="check1" checked disabled /><span
+                class="check-name">Option 1</span></div>
+            <div class="check"><input type="checkbox" name="check" id="check2" /><span class="check-name">Option
+                2</span></div>
+          </div>
+
+          <div class="other_text" style="margin-top: 35px;">
+            Snackbar
+          </div>
+          <div class="flex_row">
+            <div class="flex_col">
+              <div class="snackbar error" style="display: flex;align-content: stretch;">
+                <img src="images/images/error-icon.svg">
+                 <div> This is an error Message.</div>
+              </div>
+            </div>
+            <div class="flex_col">
+              <div class="snackbar info" style="display: flex;align-content: stretch;">
+                <img src="images/images/info-icon.svg" >
+               <div> This is an information message!</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex_row" style="margin-top: 25px;">
+            <div class="flex_col">
+              <div class="snackbar warning" style="display: flex;align-content: stretch;">
+                <img src="images/images/warning-icon.svg">
+                  <div>This is a warning message!</div>
+              </div>
+            </div>
+            <div class="flex_col">
+              <div class="snackbar success" style="display: flex;align-content: stretch;">
+                <img src="images/images/success-icon.svg">
+               <div> This is a success message!</div>
+              </div>
+            </div>
+          </div>
+          <div class="other_text" style="margin-top: 35px;">
+            Call to action
+          </div>
+          <div class="btn">
+            <button class="primary">Primary</button>
+            <button class="secondary">Secondary</button>
+          </div>
+
+          <div class="other_text" style="margin-top: 35px;">
+            Tabs
+          </div>
+          <div 
+           class="tabs">
+           <div class="tab-item active"><a class="tab-link">Tab 1</a></div>
+           <div class="tab-item"><a class="tab-link">Tab 1</a></div>
+           <div class="tab-item"><a class="tab-link">Tab 1</a></div>
+           <div class="tab-item"><a class="tab-link">Tab 1</a></div>
+          </div>
+         
+          <div class="tab_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
+             a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic t
+            ypesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.
+           </div>
+
+         </div>
+      </div>
+     
+
+    </div>
+
+     </div>
+</section>
+
+</body>
+
+</html>
